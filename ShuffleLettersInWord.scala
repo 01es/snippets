@@ -6,7 +6,7 @@ object LetterShuffler {
     if (word.length <= 2) 
       word 
     else 
-      word.head + scala.util.Random.shuffle(word.substring(1, word.length - 1) toList).mkString + word.last
+      word.head + scala.util.Random.shuffle(word substring(1, word.length - 1) toList).mkString + word.last
 
   def main(args: Array[String]) {
      val result = if (args.size == 1) shuffle(args(0))
